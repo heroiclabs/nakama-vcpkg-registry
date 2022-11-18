@@ -3,7 +3,7 @@ set(VCPKG_USE_HEAD_VERSION ON)
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/heroiclabs/cocos2d-x.git
-    HEAD_REF cocos2d/cocos2d-x:v4
+    HEAD_REF v4
 )
 
 set(VCPKG_USE_HEAD_VERSION OFF)
