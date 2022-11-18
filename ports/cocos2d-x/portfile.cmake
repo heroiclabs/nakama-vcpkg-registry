@@ -10,7 +10,7 @@ set(VCPKG_USE_HEAD_VERSION OFF)
 
 execute_process(COMMAND ${CMAKE_COMMAND} -E echo "yes" # accept metal support
      COMMAND "python" "download-deps.py"
-     WORKING_DIRECTORY ${cocos2d-x_SOURCE_DIR}
+     WORKING_DIRECTORY ${SOURCE_PATH}
      COMMAND_ECHO STDOUT ECHO_OUTPUT_VARIABLE ECHO_ERROR_VARIABLE COMMAND_ERROR_IS_FATAL ANY)
 
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH})
