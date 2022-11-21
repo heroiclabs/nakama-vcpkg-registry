@@ -14,7 +14,7 @@
       "host": true
     },
     {
-      "name": "python2",
+      "name": "vcpkg-tool-python2",
       "host": true
     }
   ]

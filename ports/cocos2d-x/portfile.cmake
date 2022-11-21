@@ -6,12 +6,10 @@ vcpkg_from_git(
     HEAD_REF v4
 )
 
-find_package(python2 NO_SYSTEM_ENVIRONMENT_PATH)
-
 set(VCPKG_USE_HEAD_VERSION OFF)
 
 execute_process(COMMAND ${CMAKE_COMMAND} -E echo "yes" # accept metal support
-     COMMAND ${python2_BINARY_DIR)/python.exe "download-deps.py"
+     COMMAND "${PYTHON2}" "download-deps.py"
      WORKING_DIRECTORY ${SOURCE_PATH}
      COMMAND_ECHO STDOUT ECHO_OUTPUT_VARIABLE ECHO_ERROR_VARIABLE COMMAND_ERROR_IS_FATAL ANY)
 
