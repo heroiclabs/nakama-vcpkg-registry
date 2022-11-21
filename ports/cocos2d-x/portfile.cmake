@@ -8,6 +8,8 @@ vcpkg_from_git(
 
 set(VCPKG_USE_HEAD_VERSION OFF)
 
+vcpkg_find_acquire_program(PYTHON2)
+
 execute_process(COMMAND ${CMAKE_COMMAND} -E echo "yes" # accept metal support
      COMMAND "${PYTHON2}" "download-deps.py"
      WORKING_DIRECTORY ${SOURCE_PATH}
