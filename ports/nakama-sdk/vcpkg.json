@@ -53,7 +53,7 @@
                     ]
                 }
             ],
-            "supports": "osx | ios | linux"
+            "supports": "osx | ios | linux | android"
         },
         "libcxx": {
             "description": "An alternative C++ standard library, used by Unreal Engine.",
