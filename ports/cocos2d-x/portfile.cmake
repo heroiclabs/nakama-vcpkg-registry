@@ -15,7 +15,11 @@ execute_process(COMMAND ${CMAKE_COMMAND} -E echo "yes" # accept metal support
      WORKING_DIRECTORY ${SOURCE_PATH}
      COMMAND_ECHO STDOUT ECHO_OUTPUT_VARIABLE ECHO_ERROR_VARIABLE COMMAND_ERROR_IS_FATAL ANY)
 
-vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH})
+vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
+    OPTIONS
+        -DBUILD_LUA_LIBS=OFF
+        -DBUILD_CPP_TEMPLATE=OFF
+        -DBUILD_CPP_TESTS=OFF
+)
 
-vcpkg_cmake_config_fixup()
 vcpkg_cmake_install()
