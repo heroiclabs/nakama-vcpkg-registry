@@ -16,11 +16,12 @@ vcpkg_check_features(
         curl  BUILD_CURL
         libhttpclient-http WITH_LIBHTTPCLIENT_HTTP
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS
+        distribute-optional-lite DISTRIBUTE_OPTIONAL_LITE
+        distribute-protobuf DISTRIBUTE_PROTOBUF
 )
 
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
   OPTIONS
-    -DINCLUDE_OPTIONAL_LITE=OFF # user will obtain optional-lite via vcpkg dependency management
     ${FEATURE_OPTIONS} ### created by vcpkg_check_features
 )
 

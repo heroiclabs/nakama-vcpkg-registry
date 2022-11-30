@@ -68,11 +68,11 @@
                 }
             ]
         },
-        "grpc": {
-            "description": "The grpc networking protocol.",
-            "dependencies": [
-                "grpc"
-            ]
+        "distribute-protobuf": {
+            "description": "Whether or not to distribute protocol buffers with the library."
+        },
+        "distribute-optional-lite": {
+            "description": "Whether or not to distribute optional-lite with the library."
         }
     }
 }
