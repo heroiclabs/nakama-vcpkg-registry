@@ -23,8 +23,10 @@ vcpkg_check_features(
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
   OPTIONS
     ${FEATURE_OPTIONS} ### created by vcpkg_check_features
-    DISABLE_PARALLEL_CONFIGURE ## enable writing to the source directory for FetchContent
 )
+
 
 vcpkg_cmake_config_fixup()
 vcpkg_cmake_install()
+
+file(INSTALL "${SOURCE_PATH}/LICENSE.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
