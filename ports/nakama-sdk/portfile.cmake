@@ -14,6 +14,7 @@ vcpkg_check_features(
         wslay BUILD_WSLAY
         grpc  BUILD_GRPC_CLIENT
         curl  BUILD_CURL
+        logs  LOGS_ENABLED
         libhttpclient-http WITH_LIBHTTPCLIENT_HTTP
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS
         distribute-optional-lite DISTRIBUTE_OPTIONAL_LITE

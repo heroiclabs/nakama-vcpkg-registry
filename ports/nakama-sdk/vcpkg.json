@@ -73,6 +73,9 @@
         },
         "distribute-optional-lite": {
             "description": "Whether or not to distribute optional-lite with the library."
+        },
+        "logs": {
+            "description": "Whether or not logs are enabled."
         }
     }
 }
