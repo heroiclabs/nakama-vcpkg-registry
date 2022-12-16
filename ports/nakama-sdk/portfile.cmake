@@ -17,6 +17,7 @@ vcpkg_check_features(
         logs  LOGS_ENABLED
         libhttpclient-http WITH_LIBHTTPCLIENT_HTTP
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS
+        cpprestsdk-http WITH_CPPRESTSDK_HTTP
         distribute-optional-lite DISTRIBUTE_OPTIONAL_LITE
         distribute-protobuf DISTRIBUTE_PROTOBUF
 )
@@ -25,7 +26,6 @@ vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
   OPTIONS
     ${FEATURE_OPTIONS} ### created by vcpkg_check_features
 )
-
 
 vcpkg_cmake_install()
 vcpkg_cmake_config_fixup()
