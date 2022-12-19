@@ -68,18 +68,14 @@
                 }
             ]
         },
-        "distribute-protobuf": {
-            "description": "Whether or not to distribute protocol buffers with the library."
-        },
-        "distribute-optional-lite": {
-            "description": "Whether or not to distribute optional-lite with the library."
-        },
         "logs": {
             "description": "Whether or not logs are enabled."
         },
         "cpprestsdk-http": {
             "description": "Whether to use cpprestsdk for http requests.",
-            "dependencies": [ {"name": "cpprestsdk"} ]
+            "dependencies": [
+                {"name": "cpprestsdk"}
+            ]
         }
     }
 }

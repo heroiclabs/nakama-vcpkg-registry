@@ -18,8 +18,6 @@ vcpkg_check_features(
         libhttpclient-http WITH_LIBHTTPCLIENT_HTTP
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS
         cpprestsdk-http WITH_CPPRESTSDK_HTTP
-        distribute-optional-lite DISTRIBUTE_OPTIONAL_LITE
-        distribute-protobuf DISTRIBUTE_PROTOBUF
 )
 
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
