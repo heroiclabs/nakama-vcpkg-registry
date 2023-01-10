@@ -19,10 +19,6 @@ vcpkg_cmake_configure(
 
         # On consoles system header files are using GNU extensions
         -DCMAKE_C_FLAGS_INIT="-Wno-gnu-statement-expression"
-    OPTIONS_DEBUG
-        # vcpkg wants debug not to install headers, only binaries
-        # so in debug mode we install them outside of CMAKE_INSTALL_PREFIX
-        -DCMAKE_INSTALL_INCLUDEDIR=/tmp/ignoreme
 )
 vcpkg_cmake_install()
 
@@ -31,3 +27,5 @@ vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/${PORT})
 file(REMOVE_RECURSE
         ${CURRENT_PACKAGES_DIR}/debug/share
 )
+
+file(INSTALL "${SOURCE_PATH}/COPYING" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
