@@ -17,7 +17,7 @@ vcpkg_check_features(
         logs  LOGS_ENABLED
         libhttpclient-http WITH_LIBHTTPCLIENT_HTTP
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS
-        cpprestsdk-http WITH_CPPRESTSDK_HTTP
+        cpprestsdk WITH_CPPRESTSDK
 )
 
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
