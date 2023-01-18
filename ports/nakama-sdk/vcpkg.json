@@ -31,7 +31,7 @@
         },
         "libhttpclient-http": {
             "description": "HTTP library that delegates to other implementations.",
-            "supports": "windows | android | osx | ios | linux"
+            "supports": "windows | osx | ios | linux"
         },
         "wslay": {
             "description": "Websockets library decoupled from IO and handshakes.",
@@ -40,7 +40,7 @@
                     "name": "wslay"
                 }
             ],
-            "supports": "osx | ios | linux | android"
+            "supports": "osx | ios | linux"
         },
         "curl": {
             "description": "The libcurl networking library.",
@@ -53,7 +53,7 @@
                     ]
                 }
             ],
-            "supports": "osx | ios | linux | android"
+            "supports": "osx | ios | linux"
         },
         "libcxx": {
             "description": "An alternative C++ standard library, used by Unreal Engine.",
@@ -72,10 +72,18 @@
             "description": "Whether or not logs are enabled."
         },
         "cpprestsdk": {
-            "description": "Whether to use cpprestsdk for http requests.",
+            "description": "Maintenance-mode HTTP and Websockets library.",
             "dependencies": [
-                {"name": "cpprestsdk"}
-            ]
+                {
+                    "name": "cpprestsdk",
+                    "default-features": false,
+                    "features": [
+                        "websockets"
+                    ],
+                    "platform": "android"
+                }
+            ],
+            "supports": "android"
         }
     }
 }
