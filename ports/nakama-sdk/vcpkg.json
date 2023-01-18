@@ -71,7 +71,7 @@
         "logs": {
             "description": "Whether or not logs are enabled."
         },
-        "cpprestsdk-http": {
+        "cpprestsdk": {
             "description": "Whether to use cpprestsdk for http requests.",
             "dependencies": [
                 {"name": "cpprestsdk"}
