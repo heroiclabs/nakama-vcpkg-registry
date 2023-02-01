@@ -18,9 +18,12 @@ To integrate it with your vcpkg consumer, add the following to a `vcpkg-configur
 
 # Contributing
 
-If you need to make a change to a port, commit your change and then run the following from the vcpkg repo:
+If you need to make a change to the portfile, vcpkg has a very particular process for exposing that change to port consumers:
 
-./vcpkg x-add-version <port>
+(1) Make the desired change to the portfile. Commit.
 
-This will ensure the various other parts of the registry (e.g., baseline and version files) are up-to-date. It essentially
-"lints" your change to make sure it is valid.
+(2) Get the git-tree hash of the portfile directory: `git rev-parse HEAD:ports/<port>`.
+
+(3) Insert a new version with this as the value for `git-tree` in a new array entry in `versions`. Commit.
+
+(4) Consumers will need to update to the new commit as the `baseline` value in their `vcpkg-configuration.json`.
