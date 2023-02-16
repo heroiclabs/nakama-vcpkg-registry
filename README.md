@@ -24,6 +24,6 @@ If you need to make a change to the portfile, vcpkg has a very particular proces
 
 (2) Get the git-tree hash of the portfile directory: `git rev-parse HEAD:ports/<port>`.
 
-(3) Insert a new version with this as the value for `git-tree` in a new array entry in `versions`. Commit.
+(3) Insert a new version with this as the value for `git-tree` in a new array entry in `versions`. Update `baseline.json` with the new version. Commit.
 
-(4) Consumers will need to update to the new commit as the `baseline` value in their `vcpkg-configuration.json`.
+(4) Consumers will need to update to the newest commit as the `baseline` value in their `vcpkg-configuration.json`.
