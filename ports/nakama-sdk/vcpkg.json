@@ -40,7 +40,7 @@
                     "name": "wslay"
                 }
             ],
-            "supports": "osx | ios | linux"
+            "supports": "osx | ios | linux | android"
         },
         "curl-io": {
             "description": "The libcurl networking library.",
