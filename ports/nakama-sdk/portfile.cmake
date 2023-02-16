@@ -13,7 +13,8 @@ vcpkg_check_features(
     FEATURES
         wslay BUILD_WSLAY
         grpc  BUILD_GRPC_CLIENT
-        curl  BUILD_CURL
+        curl-io  BUILD_CURL_IO
+        curl-http  BUILD_CURL_HTTP
         logs  LOGS_ENABLED
         libhttpclient-http WITH_LIBHTTPCLIENT_HTTP
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS

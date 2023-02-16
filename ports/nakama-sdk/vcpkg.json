@@ -42,7 +42,7 @@
             ],
             "supports": "osx | ios | linux"
         },
-        "curl": {
+        "curl-io": {
             "description": "The libcurl networking library.",
             "dependencies": [
                 {
@@ -53,7 +53,20 @@
                     ]
                 }
             ],
-            "supports": "osx | ios | linux"
+            "supports": "osx | ios | linux | android"
+        },
+        "curl-http": {
+            "description": "The libcurl networking library.",
+            "dependencies": [
+                {
+                    "name": "curl",
+                    "default-features": false,
+                    "features": [
+                        "ssl"
+                    ]
+                }
+            ],
+            "supports": "osx | ios | linux | android"
         },
         "libcxx": {
             "description": "An alternative C++ standard library, used by Unreal Engine.",
