@@ -19,6 +19,7 @@ vcpkg_check_features(
 
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
   OPTIONS
+    -DDISTRIBUTE_OPTIONAL_LITE=OFF ### vcpkg will handle the distribution rather than the SDK itself
     ${FEATURE_OPTIONS} ### created by vcpkg_check_features
 )
 
