@@ -25,6 +25,8 @@ Commit the modifications to your `portfile` and `vcpkg.json`. Then run:
 
 `$VCPKG_ROOT/vcpkg x-add-version <port> --vcpkg-root=${PWD}`
 
+Then make another commit, or if your currento ne is not yet pushed, you can amend the current one (`git commit --amend --no-edit`).
+
 You may discover that you made a mistake with a portfile. In these cases you can append `--overwrite-version` to your `x-add-version` commmand, so that the bad version isn't tracked by the registry.
 
 You also may need to calculate a new SHA512 for an artifact you're pulling in. To get this value, run: `$VCPKG_ROOT/vcpkg hash <(curl <url-of-compressed-git-repo>)`.
