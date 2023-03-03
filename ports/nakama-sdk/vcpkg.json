@@ -1,6 +1,7 @@
 {
   "name": "nakama-sdk",
   "version": "2.7.1",
+  "port-version": 1,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -63,12 +64,10 @@
       ]
     },
     "libhttpclient-http": {
-      "description": "HTTP library that delegates to other implementations.",
-      "supports": "windows | osx | ios | linux"
+      "description": "HTTP library that delegates to other implementations."
     },
     "libhttpclient-ws": {
       "description": "Websockets library that delegates to other implementations.",
-      "supports": "windows | android",
       "dependencies": [
         {
           "name": "asio",
@@ -90,7 +89,6 @@
     },
     "wslay": {
       "description": "Websockets library decoupled from IO and handshakes.",
-      "supports": "osx | ios | linux | android",
       "dependencies": [
         "wslay"
       ]
