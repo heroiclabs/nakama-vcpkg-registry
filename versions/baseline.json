@@ -6,7 +6,7 @@
     },
     "nakama-sdk": {
       "baseline": "2.7.1",
-      "port-version": 4
+      "port-version": 5
     },
     "wslay": {
       "baseline": "1.1.1",
