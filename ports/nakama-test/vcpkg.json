@@ -1,0 +1,11 @@
+{
+  "name": "nakama-test",
+  "version": "0.0.0",
+  "dependencies": [
+    "optional-lite",
+    {
+      "name": "rapidjson",
+      "version>=": "2020-09-14#2"
+    }
+  ]
+}
