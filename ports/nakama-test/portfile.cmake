@@ -4,7 +4,7 @@ vcpkg_from_git(
     REF 7d1eebb4a4a6113a0dcb97d3c40b7c233ad3fbf6
 )
 
-vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH})
+vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}/test)
 
 vcpkg_cmake_install()
 vcpkg_cmake_config_fixup()
