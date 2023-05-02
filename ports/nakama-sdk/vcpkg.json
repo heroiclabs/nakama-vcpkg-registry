@@ -1,6 +1,7 @@
 {
   "name": "nakama-sdk",
   "version": "2.7.2",
+  "port-version": 1,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -25,7 +26,6 @@
     },
     "curl-http": {
       "description": "The libcurl networking library.",
-      "supports": "osx | ios | linux | android",
       "dependencies": [
         {
           "name": "curl",
@@ -38,7 +38,6 @@
     },
     "curl-io": {
       "description": "The libcurl networking library.",
-      "supports": "osx | ios | linux | android",
       "dependencies": [
         {
           "name": "curl",
