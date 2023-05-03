@@ -24,8 +24,6 @@ if (VISUAL_STUDIO_GENERATOR)
     set(GENERATOR "Visual Studio 17 2022")
 endif()
 
-message("Configuring Nakama with generator: ${GENERATOR}")
-
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
   GENERATOR ${GENERATOR}
   OPTIONS
