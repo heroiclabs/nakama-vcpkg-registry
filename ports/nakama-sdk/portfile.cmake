@@ -18,14 +18,8 @@ vcpkg_check_features(
         visual-studio VISUAL_STUDIO_GENERATOR
 )
 
-set(GENERATOR "Ninja Multi-Config")
-
-if (VISUAL_STUDIO_GENERATOR)
-    set(GENERATOR "Visual Studio 17 2022")
-endif()
-
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}
-  GENERATOR ${GENERATOR}
+  WINDOWS_USE_MSBUILD
   OPTIONS
     -DDISTRIBUTE_OPTIONAL_LITE=OFF ### vcpkg will handle the distribution rather than the SDK itself
     ${FEATURE_OPTIONS} ### created by vcpkg_check_features
