@@ -1,7 +1,7 @@
 {
   "name": "wslay",
   "version": "1.1.1",
-  "port-version": 3,
+  "port-version": 4,
   "description": "websocket library",
   "homepage": "https://tatsuhiro-t.github.io/wslay/",
   "license": "MIT",
