@@ -1,7 +1,7 @@
 {
   "name": "wslay",
   "version": "1.1.1",
-  "port-version": 5,
+  "port-version": 6,
   "description": "websocket library",
   "homepage": "https://tatsuhiro-t.github.io/wslay/",
   "license": "MIT",
@@ -14,5 +14,10 @@
       "name": "vcpkg-cmake-config",
       "host": true
     }
-  ]
+  ],
+  "features": {
+    "windows-use-msbuild": {
+      "description": "Whether or not to compile the SDK with MSBuild on Windows machines."
+    }
+  }
 }

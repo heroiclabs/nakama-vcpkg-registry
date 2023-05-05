@@ -1,7 +1,7 @@
 {
   "name": "nakama-sdk",
   "version": "2.7.2",
-  "port-version": 3,
+  "port-version": 4,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -70,8 +70,8 @@
     "logs": {
       "description": "Whether or not logs are enabled."
     },
-    "visual-studio": {
-      "description": "Whether or not to compile the SDK with Visual Studio."
+    "windows-use-msbuild": {
+      "description": "Whether or not to compile the SDK with MSBuild on Windows machines."
     },
     "wslay": {
       "description": "Websockets library decoupled from IO and handshakes.",
