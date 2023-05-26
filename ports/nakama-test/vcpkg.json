@@ -1,7 +1,7 @@
 {
   "name": "nakama-test",
   "version": "0.0.0",
-  "port-version": 4,
+  "port-version": 5,
   "dependencies": [
     "optional-lite",
     {
