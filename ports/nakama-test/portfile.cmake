@@ -7,6 +7,7 @@ vcpkg_from_git(
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}/test
     OPTIONS
         -DREMOTE_NAKAMA_SDK=ON ### use vcpkg to get nakama rather than looking for a local version.
+        -DBUILD_EXECUTABLE=OFF
 )
 
 vcpkg_cmake_install()
