@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "port-version": 6,
   "dependencies": [
+    "curl",
     "nakama-sdk",
     "optional-lite",
+    "protobuf",
     {
       "name": "rapidjson",
       "version>=": "2020-09-14#2"
