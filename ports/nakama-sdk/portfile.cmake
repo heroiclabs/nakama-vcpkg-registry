@@ -1,7 +1,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/heroiclabs/nakama-cpp.git
-    REF d1e74c604d9e29ba5d771c30fb97617b1dc4867a
+    REF 068be504a891989c510cb46ecf5b4005a1b3d011
 )
 
 vcpkg_check_features(
