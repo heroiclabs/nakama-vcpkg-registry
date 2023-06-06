@@ -1,7 +1,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/heroiclabs/nakama-cpp.git
-    REF 21c260b145b9d0d6c4d907828082e9d3e5ebb65b
+    REF 3991fb3871ac452842a2afdc5cb12a86d6ceac73
 )
 
 vcpkg_check_features(
@@ -16,6 +16,7 @@ vcpkg_check_features(
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS
         cpprestsdk WITH_CPPRESTSDK
         windows-use-msbuild WINDOWS_USE_MSBUILD
+        force-dll-import-export FORCE_DLL_IMPORT_EXPORT
 )
 
 if(WINDOWS_USE_MSBUILD)
