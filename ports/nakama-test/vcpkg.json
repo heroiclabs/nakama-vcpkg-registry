@@ -12,5 +12,10 @@
     },
     "vcpkg-cmake",
     "vcpkg-cmake-config"
-  ]
+  ],
+  "features": {
+    "force-dll-import-export": {
+      "description": "Force interface symbols to be imported and exported regardless of the platform."
+    }
+  }
 }
