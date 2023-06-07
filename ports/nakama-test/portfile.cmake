@@ -1,7 +1,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/heroiclabs/nakama-cpp.git
-    REF 8893c7d019f2c70976538aca5649e92e1266b878
+    REF 340ed4a6f16cd5a03a62b30e3c898c95545397f8
 )
 
 vcpkg_check_features(
@@ -13,6 +13,7 @@ vcpkg_check_features(
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}/test
     OPTIONS
         -DREMOTE_NAKAMA_SDK=ON ### use vcpkg to get nakama rather than looking for a local version.
+        -DINSTALL_NAKAMA_SDK=OFF ### will be installed via vcpkg
         -DBUILD_EXECUTABLE=OFF
         ${FEATURE_OPTIONS} ### created by vcpkg_check_features
 )
