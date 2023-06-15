@@ -1,7 +1,7 @@
 {
   "name": "nakama-sdk",
   "version": "2.8.0",
-  "port-version": 4,
+  "port-version": 5,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -25,7 +25,7 @@
       ]
     },
     "curl-http": {
-      "description": "The libcurl networking library.",
+      "description": "The libcurl networking library for HTTP(S) communication.",
       "dependencies": [
         {
           "name": "curl",
@@ -36,8 +36,11 @@
         }
       ]
     },
+    "curl-http-system": {
+      "description": "The libcurl networking library provided by the system for HTTP(S) communication."
+    },
     "curl-io": {
-      "description": "The libcurl networking library.",
+      "description": "The libcurl networking library for websocket IO and handshakes.",
       "dependencies": [
         {
           "name": "curl",
@@ -47,6 +50,9 @@
           ]
         }
       ]
+    },
+    "curl-io-system": {
+      "description": "The system libcurl networking library for websocket IO and handshakes."
     },
     "force-dll-import-export": {
       "description": "Force interface symbols to be imported and exported regardless of the platform."

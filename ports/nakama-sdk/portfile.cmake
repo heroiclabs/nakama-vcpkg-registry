@@ -1,7 +1,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/heroiclabs/nakama-cpp.git
-    REF 426ac015200b990d7daea659ac275d42acef4552
+    REF 6559ffdbe1900f09bbf18abe2555ba1336644d5a
 )
 
 vcpkg_check_features(
@@ -11,6 +11,8 @@ vcpkg_check_features(
         grpc  BUILD_GRPC_CLIENT
         curl-io  BUILD_CURL_IO
         curl-http  BUILD_CURL_HTTP
+        curl-io-system BUILD_CURL_IO_SYSTEM
+        curl-http-system BUILD_CURL_HTTP_SYSTEM
         logs  LOGS_ENABLED
         libhttpclient-http WITH_LIBHTTPCLIENT_HTTP
         libhttpclient-ws WITH_LIBHTTPCLIENT_WS
