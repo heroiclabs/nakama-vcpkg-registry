@@ -16,5 +16,10 @@
     "force-dll-import-export": {
       "description": "Force interface symbols to be imported and exported regardless of the platform."
     }
-  }
+  },
+  "overrides": [
+    {
+      "name": "curl", "version": "8.0.1"
+    }
+  ]
 }
