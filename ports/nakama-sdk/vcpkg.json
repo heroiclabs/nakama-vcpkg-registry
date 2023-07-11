@@ -1,7 +1,7 @@
 {
   "name": "nakama-sdk",
   "version": "2.8.0",
-  "port-version": 7,
+  "port-version": 8,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -10,6 +10,9 @@
     "vcpkg-cmake-config"
   ],
   "features": {
+    "apple-dylib": {
+      "description": "Build .dylibs for the Apple platform."
+    },
     "cpprestsdk": {
       "description": "Maintenance-mode HTTP and Websockets library.",
       "supports": "android",

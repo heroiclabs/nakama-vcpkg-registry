@@ -1,7 +1,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/heroiclabs/nakama-cpp.git
-    REF 1ae80a9cb99c0e1c9b8447771768ba668c176af2
+    REF 485aa27685251f1661b3ed85803a7dd22ee4d239
 )
 
 vcpkg_check_features(
@@ -19,6 +19,8 @@ vcpkg_check_features(
         cpprestsdk WITH_CPPRESTSDK
         windows-use-msbuild WINDOWS_USE_MSBUILD
         force-dll-import-export FORCE_DLL_IMPORT_EXPORT
+    INVERTED_FEATURES
+        apple-dylib BUILD_APPLE_FRAMEWORK
 )
 
 if(WINDOWS_USE_MSBUILD)
