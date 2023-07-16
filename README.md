@@ -11,7 +11,7 @@ To integrate it with your vcpkg consumer, add the following to a `vcpkg-configur
         "repository": "https://github.com/heroiclabs/nakama-vcpkg-registry",
         "baseline": "<commit>",
         "reference": "master",
-        "packages": ["nakama-sdk", "wslay"]
+        "packages": ["nakama-sdk", "wslay", "nakama-test"]
     }
 ]
 ```
