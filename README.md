@@ -1,6 +1,6 @@
 # Overview
 
-This is a federated package registry for dependencies across the `nakama-cpp` family of SDKs.
+This is Heroic Labs' package registry for dependencies across the `nakama-cpp` family of SDKs.
 
 To integrate it with your vcpkg consumer, add the following to a `vcpkg-configuration.json` in the root of your repository:
 
