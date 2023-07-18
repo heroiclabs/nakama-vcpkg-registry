@@ -6,7 +6,7 @@
     },
     "nakama-sdk": {
       "baseline": "2.8.0",
-      "port-version": 8
+      "port-version": 9
     },
     "nakama-test": {
       "baseline": "0.0.0",
