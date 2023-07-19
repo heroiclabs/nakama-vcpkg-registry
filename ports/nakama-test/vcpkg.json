@@ -1,7 +1,7 @@
 {
   "name": "nakama-test",
   "version": "0.0.0",
-  "port-version": 9,
+  "port-version": 10,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -19,7 +19,8 @@
   },
   "overrides": [
     {
-      "name": "curl", "version": "8.0.1"
+      "name": "curl",
+      "version": "8.0.1"
     }
   ]
 }
