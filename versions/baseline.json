@@ -10,7 +10,7 @@
     },
     "nakama-test": {
       "baseline": "0.0.0",
-      "port-version": 10
+      "port-version": 11
     },
     "wslay": {
       "baseline": "1.1.1",
