@@ -8,6 +8,7 @@ vcpkg_check_features(
     OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
         force-dll-import-export FORCE_DLL_IMPORT_EXPORT
+        asan ADDRESS_SANITIZER
 )
 
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}/test

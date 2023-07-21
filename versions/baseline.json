@@ -6,11 +6,11 @@
     },
     "nakama-sdk": {
       "baseline": "2.8.0",
-      "port-version": 11
+      "port-version": 12
     },
     "nakama-test": {
       "baseline": "0.0.0",
-      "port-version": 11
+      "port-version": 12
     },
     "wslay": {
       "baseline": "1.1.1",

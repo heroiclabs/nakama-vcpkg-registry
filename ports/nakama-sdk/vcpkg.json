@@ -1,7 +1,7 @@
 {
   "name": "nakama-sdk",
   "version": "2.8.0",
-  "port-version": 11,
+  "port-version": 12,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -12,6 +12,9 @@
   "features": {
     "apple-dylib": {
       "description": "Build .dylibs for the Apple platform."
+    },
+    "asan": {
+      "description": "Enable address sanitizers."
     },
     "cpprestsdk": {
       "description": "Maintenance-mode HTTP and Websockets library.",
