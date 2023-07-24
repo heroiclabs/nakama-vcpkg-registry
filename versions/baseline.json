@@ -1,9 +1,5 @@
 {
   "default": {
-    "libcxx": {
-      "baseline": "14.0.3",
-      "port-version": 1
-    },
     "nakama-sdk": {
       "baseline": "2.8.0",
       "port-version": 11
