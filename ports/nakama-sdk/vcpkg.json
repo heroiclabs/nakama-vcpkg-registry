@@ -1,7 +1,6 @@
 {
   "name": "nakama-sdk",
-  "version": "2.8.0",
-  "port-version": 13,
+  "version": "2.8.4",
   "dependencies": [
     "optional-lite",
     "protobuf",
