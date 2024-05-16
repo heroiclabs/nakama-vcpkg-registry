@@ -1,16 +1,16 @@
 {
   "default": {
-    "msquic": {
+    "ms-quic": {
       "baseline": "2.2.0",
       "port-version": 0
     },
     "nakama-sdk": {
-      "baseline": "2.8.0",
-      "port-version": 11
+      "baseline": "2.8.4",
+      "port-version": 5
     },
     "nakama-test": {
       "baseline": "0.0.0",
-      "port-version": 10
+      "port-version": 12
     },
     "wslay": {
       "baseline": "1.1.1",

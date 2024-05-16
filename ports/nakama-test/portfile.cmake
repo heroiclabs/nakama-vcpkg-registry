@@ -1,13 +1,14 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/heroiclabs/nakama-cpp.git
-    REF a4a6fd8a79d330e286f8d469494127e38f2c06be
+    REF c878c6989d9fa631795c62e8fc39d61033e4c893
 )
 
 vcpkg_check_features(
     OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
         force-dll-import-export FORCE_DLL_IMPORT_EXPORT
+        asan ADDRESS_SANITIZER
 )
 
 vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH}/test

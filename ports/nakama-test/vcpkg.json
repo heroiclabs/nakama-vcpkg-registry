@@ -1,7 +1,7 @@
 {
   "name": "nakama-test",
   "version": "0.0.0",
-  "port-version": 10,
+  "port-version": 12,
   "dependencies": [
     "optional-lite",
     "protobuf",
@@ -13,6 +13,9 @@
     "vcpkg-cmake-config"
   ],
   "features": {
+    "asan": {
+      "description": "Enable address sanitizers."
+    },
     "force-dll-import-export": {
       "description": "Force interface symbols to be imported and exported regardless of the platform."
     }
