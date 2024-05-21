@@ -1,7 +1,7 @@
 {
   "default": {
     "ms-quic": {
-      "baseline": "2.2.0",
+      "baseline": "2.3.5",
       "port-version": 0
     },
     "nakama-sdk": {
